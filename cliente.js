@@ -1,18 +1,11 @@
-const informacoesClientes = [
-  {
-    cpf: 18875539081,
-    nome: "Jairo"
-  },
-  {
-    cpf: 18875539081,
-    nome: "João"
-  },
-  {
-    cpf: 18875539081,
-    nome: "Mario"
-  },
+fetch('http://localhost:4000/clientes')
+  .then(resposta => {
+    return resposta.json()
 
-]
+  })
+  .then(json => {
+    return json
+  })
 
 
 
