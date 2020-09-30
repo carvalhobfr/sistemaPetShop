@@ -14,10 +14,10 @@ const cadastrarClientes = (nome, cpf) => {
     nome: nome,
     cpf: cpf
   })
-  return fetch('http://localhost:400/clientes/client', {
+  return fetch('http://localhost:4000/clientes/cliente', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-type': 'application/json'
     },
     body: json
   })
