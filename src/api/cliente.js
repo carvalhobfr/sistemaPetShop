@@ -26,7 +26,7 @@ const cadastrarClientes = (nome, cpf) =>  {
 } 
 
 const deletaCliente = id => {
-  return fetch(`http:localhost:4000/clientes/cliente/${id}`, {
+  return fetch(`http://localhost:4000/clientes/cliente/${id}`, {
     method: "DELETE",
 })}
 
@@ -52,4 +52,12 @@ const editaCliente = (id, cpf, nome) => {
     },
     body: json
   })
+}
+
+export { 
+  listarClientes,
+  deletaCliente,
+  detalhaCliente,
+  editaCliente,
+  cadastrarClientes
 }
